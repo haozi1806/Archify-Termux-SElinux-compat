@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Archify 安卓兼容层",
+    "description": "在 Android/Termux 上运行 Archify 绘图技能：修复 SELinux 硬链接拒绝与 termux-exec 的 process.execPath 误报。"
+  }
+}

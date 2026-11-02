@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Archify Android Compatibility",
+    "description": "Runs the Archify diagram skill on Android/Termux by repairing the SELinux link(2) rejection and the termux-exec process.execPath misreport."
+  }
+}

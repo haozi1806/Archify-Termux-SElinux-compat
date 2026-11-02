@@ -1,0 +1,31 @@
+{
+  "name": "archify-selinux-compat",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Android/Termux compatibility layer for the Archify diagram skill: repairs the SELinux link(2) rejection and the termux-exec process.execPath misreport.",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cli": "./lib/cli.js",
+    "./preload": "./lib/preload.mjs",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/cli.js",
+    "lib/preload.mjs",
+    "lib/hooks.mjs",
+    "lib/hardlink-shim.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "skills/**/*"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

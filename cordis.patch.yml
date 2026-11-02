@@ -1,0 +1,15 @@
+# Android/Termux compatibility shim for the Archify skill.
+#
+# Archify's publication contract is built on link(2), and it spawns children
+# through process.execPath. On Android app domains both assumptions fail:
+# SELinux rejects link(2) with EACCES, and termux-exec reports the dynamic
+# linker as process.execPath. This bundle exposes one preload module that
+# repairs both from inside the Node process, plus a Skill that tells the agent
+# how to run Archify commands through it.
+- insert:
+    - id: archify-selinux-compat-skill
+      name: '@deepseek-ai/dsh-skill-filesystem'
+      config:
+        providerName: archify-selinux-compat
+        includeDefaultRoots: false
+        bundledSkillDir: !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('archify-selinux-compat/package.json')), 'skills')

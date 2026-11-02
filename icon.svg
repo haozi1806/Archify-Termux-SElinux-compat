@@ -1,0 +1,17 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="4" y="4" width="28" height="28" rx="7" fill="#7FB7FC" fill-opacity="0.16" />
+  <path d="M16 11.5H22.5C23.6046 11.5 24.5 12.3954 24.5 13.5V20" stroke="#658EFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M20 24.5H13.5C12.3954 24.5 11.5 23.6046 11.5 22.5V16" stroke="#4D6BFE" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="7" y="7" width="9" height="9" rx="2.5" fill="url(#archify-compat-node-a)" />
+  <rect x="20" y="20" width="9" height="9" rx="2.5" fill="url(#archify-compat-node-b)" />
+  <defs>
+    <linearGradient id="archify-compat-node-a" x1="7" y1="7" x2="16" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7FB7FC" />
+      <stop offset="1" stop-color="#4D6BFE" />
+    </linearGradient>
+    <linearGradient id="archify-compat-node-b" x1="20" y1="20" x2="29" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6DB9FB" />
+      <stop offset="1" stop-color="#3650DE" />
+    </linearGradient>
+  </defs>
+</svg>
